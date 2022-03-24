@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace UserManagement.Entities
 {
-    internal class UserRole
+    public class UserRole
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
     }
 }

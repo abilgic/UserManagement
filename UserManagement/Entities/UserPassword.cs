@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace UserManagement.Entities
 {
-    internal class UserPassword
+    public class UserPassword
     {
+        public int Id { get; set; }
+        public string Password { get; set; }
+        public string Password2 { get; set; }
+        public string Password3 { get; set; }
+
     }
 }

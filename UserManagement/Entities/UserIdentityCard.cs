@@ -8,5 +8,8 @@ namespace UserManagement.Entities
 {
     public class UserIdentityCard
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
     }
 }
