@@ -8,7 +8,7 @@ namespace UserManagement.Entities
 {
     public class User
     {
-        public int Id { get; set; }
+        public int UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
@@ -17,5 +17,8 @@ namespace UserManagement.Entities
         public string BirthPlace { get; set; }
         public string City { get; set; }
         public string Town { get; set; }
+        public ICollection<UserRole> Roles { get; set; }
+        public ICollection<UserPassword> UserPasswords { get; set; }
+        public UserIdentityCard UserIdentityCard { get; set; }
     }
 }

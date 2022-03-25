@@ -12,6 +12,7 @@ namespace UserManagement.Entities
         public string Password { get; set; }
         public string Password2 { get; set; }
         public string Password3 { get; set; }
+        public User User { get; set; }
 
     }
 }
